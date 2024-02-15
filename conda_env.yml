@@ -1,0 +1,7 @@
+name: gaze
+dependencies:
+  - python=3.8
+  - numpy
+  - flask
+  - pip
+

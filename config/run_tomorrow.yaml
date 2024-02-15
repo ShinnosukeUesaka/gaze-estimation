@@ -1,0 +1,23 @@
+datasets:
+  train:
+    type: xgaze-with-augmented
+    dir: /work/s-uesaka/xgaze_224_xgaze_prompt_augmented/train
+    batch_size: 50
+    split_file: /home/s-uesaka/gaze-estimation-xgaze/config/split_1.json
+  validation:
+    type: xgaze
+    dir: /work/s-uesaka/xgaze_224_cam12_augmented/train
+    batch_size: 50
+    split_file: /home/s-uesaka/gaze-estimation-xgaze/config/split_1.json
+training_parameters:
+  batch_size: 20
+  epochs: 30
+  init_lr: 0.0001
+  lr_patience: 10
+  lr_decay_factor: 0.1
+wandb_config:
+  project_name: Gaze_Augmentation Cam12
+  run_name: With Xgaze prompt / Xgaze
+random_seed: 0
+gpus_list: [0]
+cv: 1

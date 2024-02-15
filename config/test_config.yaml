@@ -1,0 +1,17 @@
+test_datasets:
+  - type: mpii_normalized
+    dir: /work/s-uesaka/MPIIFaceGaze_normalized_h5
+    split_file: null
+    batch_size: 20
+
+model:
+  model_class: GazeModel
+  loading_type: wandb # wandb or local_path if path provide path: [PATH_TO_YOUR_CKPT] to loading_config.
+  loading_config: 
+    run_id: 2o9ia3l4
+    project_name: xgaze_augmentation
+wandb_config:
+  project_name: xgaze_augmentation
+  run_id: 2o9ia3l4
+random_seed: 0
+gpus_list: [0]

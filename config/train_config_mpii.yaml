@@ -1,0 +1,25 @@
+datasets:
+  train:
+    type: mpii_normalized
+    dir: /work/s-uesaka/MPIIFaceGaze_normalized_h5
+    split_file: null #/home/s-uesaka/gaze-estimation-xgaze/config/my_split.json
+  validation:
+    type: xgaze
+    dir: /work/s-uesaka/xgaze_224_augmented/train
+    split_file: null #/home/s-uesaka/gaze-estimation-xgaze/config/my_split.json
+  test:
+    - type: test
+      dir: test
+      split_file: null
+training_parameters:
+  batch_size: 20
+  epochs: 40
+  init_lr: 0.0001
+  lr_patience: 10
+  lr_decay_factor: 0.1
+wandb_config:
+  run_name: mpii test run
+  project_name: xgaze_augmentation
+random_seed: 0
+gpus_list: [0,1]
+sample_ratio: 0.02

@@ -1,0 +1,19 @@
+datasets:
+  train:
+    type: xgaze
+    dir: /work/s-uesaka/xgaze_224_augmented/train
+  validation:
+    type: xgaze
+    dir: /work/s-uesaka/xgaze_224_augmented/train
+  train_validation_split_file: /home/s-uesaka/gaze-estimation-xgaze/config/my_split.json
+training_parameters:
+  batch_size: 20
+  epochs: 40
+  init_lr: 0.0001
+  lr_patience: 10
+  lr_decay_factor: 0.1
+wandb:
+  run_name: Without Augmentation
+random_seed: 0
+number_of_gpus: [0,1]
+sample_ratio: 0.02

@@ -1,0 +1,12 @@
+---
+data:
+  xgaze-syn: "/mnt/xgazef_nv1112"
+  xgaze-train: "/mnt/xgaze_224/train"
+  xgaze-mytrain: "/mnt/xgaze_224my"
+  xgaze-test: "/mnt/xgaze_224/test"
+  gaze360: ""
+  mpii: "/home/jqin/Datasets/MPIIFaceGaze_normalized_h5"
+  mpii_mat: "/home/jqin/Datasets/MPIIFaceGaze_normalized"
+  mpii-nv: "/mnt/mpii_nv"
+  eyediap: ""
+  eyediap-phi: ""

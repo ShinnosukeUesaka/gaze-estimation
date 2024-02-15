@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=7 python run_train.py /home/s-uesaka/gaze-estimation-xgaze/config/run_tomorrow.yaml
